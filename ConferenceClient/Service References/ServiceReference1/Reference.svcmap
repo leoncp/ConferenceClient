@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5e48ba4c-80b1-4a78-96ca-6b6783e878b4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8888/iTactixCoreService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="iTactixCoreService.xsd" MetadataType="Schema" ID="3e987402-5357-4cab-92a7-ac4ee8833634" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd1" />
+    <MetadataFile FileName="iTactixCoreService1.xsd" MetadataType="Schema" ID="78d73e98-df88-4f9b-8fd4-2888471cdbf0" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd2" />
+    <MetadataFile FileName="iTactixCoreService2.xsd" MetadataType="Schema" ID="06468b9f-5f81-4354-9f3f-8a95a9b13b25" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd3" />
+    <MetadataFile FileName="iTactixCoreService3.xsd" MetadataType="Schema" ID="f7624f3a-3f7c-412c-88b4-13e763363019" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd4" />
+    <MetadataFile FileName="iTactixCoreService4.xsd" MetadataType="Schema" ID="742ec2b6-5c3c-465c-9c77-51a78a69d60b" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd5" />
+    <MetadataFile FileName="iTactixCoreService.disco" MetadataType="Disco" ID="b43cd984-16e4-4bb4-8b5f-2b9f715785b2" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?disco" />
+    <MetadataFile FileName="CoreService.wsdl" MetadataType="Wsdl" ID="8b54d0b1-72e4-44ac-af7e-be0e1430e3b5" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?wsdl" />
+    <MetadataFile FileName="iTactixCoreService5.xsd" MetadataType="Schema" ID="62956ded-75f2-4e61-ad47-544ef44abb6b" SourceId="1" SourceUrl="http://localhost:8888/iTactixCoreService?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

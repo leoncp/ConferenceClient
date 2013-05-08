@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="ConferenceClient.UserControlContent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:WPFMediaKit="clr-namespace:WPFMediaKit.DirectShow.Controls;assembly=WPFMediaKit"
+    Height="Auto" Width="Auto" Background="Black" Cursor="None" Unloaded="UserControl_Unloaded">
+    <Grid x:Name="mainGrid" Background="Black" Cursor="None">
+        <WindowsFormsHost x:Name="winformsHost1" Visibility="Collapsed" Width="Auto" Height="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0" Cursor="None" />
+        <WindowsFormsHost x:Name="winformsHost2" Visibility="Collapsed" Width="Auto" Height="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0" Cursor="None" />
+        <WindowsFormsHost x:Name="winformsHost3" Visibility="Collapsed" Width="Auto" Height="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0" Cursor="None" />
+        <WindowsFormsHost x:Name="winformsHost4" Visibility="Collapsed" Width="Auto" Height="Auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0" Cursor="None" />
+        <Image x:Name="imageA" Stretch="Fill" Cursor="None"/>
+        <MediaElement x:Name="mediaElementA"  Stretch="Fill"  Opacity="1"  LoadedBehavior="Manual" UnloadedBehavior="Pause" MediaEnded="mediaElementA_MediaEnded" MediaOpened="mediaElementA_MediaOpened" Loaded="mediaElementA_Loaded" Cursor="None" />
+        <MediaElement x:Name="mediaElementB"  Stretch="Fill"  Opacity="1"  LoadedBehavior="Manual" UnloadedBehavior="Pause" MediaEnded="mediaElementB_MediaEnded" MediaOpened="mediaElementB_MediaOpened" Cursor="None" />
+        <Rectangle x:Name="tickerBackgroundRectangle" Fill="White" Visibility="Collapsed" StrokeThickness="0" Cursor="None"/>
+        <!--
+        <WPFMediaKit:MediaUriElement x:Name="mediaElementC" RenderOptions.BitmapScalingMode="NearestNeighbor"  Stretch="Fill"  Source="c:\tmp\Love Happens.mpg"  LoadedBehavior="Play"  />
+        -->
+        
+    </Grid>
+</UserControl>

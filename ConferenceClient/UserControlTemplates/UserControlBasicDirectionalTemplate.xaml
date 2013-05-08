@@ -1,0 +1,66 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="ConferenceClient.UserControlBasicDirectionalTemplate"
+	x:Name="UserControl"
+	d:DesignWidth="400" d:DesignHeight="120" Width="432" Height="170">
+
+	<Grid x:Name="LayoutRoot">
+		<Border x:Name="bdrTemplate" BorderBrush="#FF5C5C5C" BorderThickness="1" CornerRadius="6" Padding="6,4" Background="#BFFFFFFF" Margin="16,12" SnapsToDevicePixels="True">
+			<Border.Effect>
+				<DropShadowEffect RenderingBias="Quality" ShadowDepth="2" Opacity="0.5" BlurRadius="3" Color="#FF272727"/>
+			</Border.Effect>
+			<Grid>
+				<Grid.Effect>
+					<DropShadowEffect BlurRadius="0" ShadowDepth="0" Opacity="0.1" RenderingBias="Quality"/>
+				</Grid.Effect>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="0.378*"/>
+					<ColumnDefinition Width="0.228*"/>
+					<ColumnDefinition Width="0.394*"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="0.544*"/>
+					<RowDefinition Height="0.456*"/>
+				</Grid.RowDefinitions>
+				<Image x:Name="imageLogo" Margin="14,0,0,10" HorizontalAlignment="Left" Width="85" Source="PickAndPay.PNG" Grid.Row="1" VerticalAlignment="Center" Grid.RowSpan="1" MaxHeight="55">
+					<Image.Effect>
+						<DropShadowEffect Opacity="0.5" RenderingBias="Quality" ShadowDepth="3"/>
+					</Image.Effect>
+				</Image>
+				<Image x:Name="imageDirection" Margin="0,5,5,0" HorizontalAlignment="Right" Width="68" Grid.Column="2" VerticalAlignment="Top" Height="68">
+					<Image.Effect>
+						<DropShadowEffect Opacity="0.5" RenderingBias="Quality" ShadowDepth="3"/>
+					</Image.Effect>
+				</Image>
+				<StackPanel Margin="12.72,2,0,1" Orientation="Vertical" VerticalAlignment="Top" Grid.ColumnSpan="3">
+					<TextBlock x:Name="tbTitle" TextWrapping="Wrap" Text="Sample Title" VerticalAlignment="Center" FontSize="26.667" d:LayoutOverrides="GridBox" Margin="0,0,-1,0" TextTrimming="CharacterEllipsis" LineStackingStrategy="BlockLineHeight" FontWeight="Bold" SnapsToDevicePixels="True">
+						<TextBlock.Effect>
+							<DropShadowEffect ShadowDepth="2" RenderingBias="Quality" Opacity="0.75" BlurRadius="3"/>
+						</TextBlock.Effect>
+					</TextBlock>
+					<Label x:Name="labelInfo"  Content="Main BoardRoom" VerticalAlignment="Top" FontSize="16" HorizontalAlignment="Left" Width="292.187" Padding="1,0,0,0" Margin="0" SnapsToDevicePixels="True">
+						<Label.Effect>
+							<DropShadowEffect ShadowDepth="1" RenderingBias="Quality" BlurRadius="3" Opacity="0.4"/>
+						</Label.Effect>
+					</Label>
+				</StackPanel>
+				<StackPanel Grid.ColumnSpan="2" Margin="-56,0,5,2" Orientation="Vertical" Grid.Row="1" VerticalAlignment="Bottom" Grid.Column="1">
+					<Label x:Name="labelVenue"  Content="Sample Description" VerticalAlignment="Center" FontSize="21.333" HorizontalAlignment="Right" Width="237.187" d:LayoutOverrides="GridBox" HorizontalContentAlignment="Right" Padding="0" SnapsToDevicePixels="True">
+						<Label.Effect>
+							<DropShadowEffect ShadowDepth="1" RenderingBias="Quality" Opacity="0.4" BlurRadius="3"/>
+						</Label.Effect>
+					</Label>
+					<Label x:Name="labelTime"  Content="1:00PM- 3:00PM" VerticalAlignment="Center" FontSize="16" HorizontalAlignment="Right" Width="295.187" HorizontalContentAlignment="Right" Padding="0" SnapsToDevicePixels="True">
+						<Label.Effect>
+							<DropShadowEffect ShadowDepth="1" RenderingBias="Quality" Opacity="0.4" BlurRadius="3"/>
+						</Label.Effect>
+					</Label>
+				</StackPanel>
+			</Grid>
+		</Border>
+	</Grid>
+</UserControl>
